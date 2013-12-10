@@ -1,0 +1,19 @@
+##ls -la [a]*[!e] 	lista alla filer som börjar på a men inte slutar på e
+##ls -la *[f-i]?	listar alla filer som börjar på f och fram till i även ensamma teken.
+##ls -la ????.[co]	listar de fyra första valfria tekena som kommer upp med . där co som ändelse
+
+#root@Mk3g:~# ls -la [a].[c]
+#-rw-r--r-- 1 root root 0 dec  9 14:56 a.c
+#uppgift 3 det du gör är att du visar uppdaterar test i test ls -la >>(test/test) med valfrit inehåll
+
+## root@Mk3g:~# ls -la *[R].[gz]
+#ls: cannot access *[R].[gz]: No such file or directory
+
+#root@Mk3g:~# .bash_logout
+#.bash_logout: command not found
+### komandot gör att du logas ut från användaren och komandot ser följande ut som ~/.bash_logout
+
+#pushd använderman för att flytta mappar/filer istället för att använda send och popd är hamnar man i när man pushar.
+#dirs är förmodligen directorys.
+
+#null komandot kan användas för att se till så att det verken blir input eller out put på filer men även så finns det ett svart hål /dev/null
