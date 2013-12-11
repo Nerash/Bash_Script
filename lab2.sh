@@ -1,4 +1,5 @@
-# Laboration2 use of echo doing the hole compendium.
+#!bin/bash
+# Laboration2 use of echo doing the hole compendium. but the tasks start at 43.
 ## Don't forget to coment syntaxes you arn't using. 
 
 #First test
@@ -18,10 +19,10 @@
 #echo -e "\nMY $Username!"
 #exit 0
 #================================
-#Third Test line 21
+#Third Test line 22
 #Mening="Bashing is fun"
 #printf "%s\n" "$Mening"
-
+#exit 0
 #Bashing is fun!
 
 #didn't work! Help!
@@ -33,18 +34,23 @@
 #fourth Test
 #Bread=25
 #printf "price on brodband is lowerd by %d%%.\n" $Bread
-
+#exit 0
 #nerash@Mk3g:~/Skola/Bash$ ./lab2.sh
-#./lab2.sh: line 33: =25: command not found
-#./lab2.sh: line 34: price on brodband is lowerd by %d%%.\n: command not found
 
-#It didn't work why? why does my terminal not accept printf? have the same problem at third and fourth test!
+#=============================== 43.36
+#Task 1
+#Username="Johan"
+#echo -n Who are you?
+#read -t 5 
+#echo $PWD $Username
+#exit 0
+## $PWD = print name of current/working directory
 
 #===============================
-#Task 1
-Username="Johan"
-echo -n Who are you?
-read -t 5 
-echo $PWD $Username
-## $PWD = print name of current/working directory
+#Task2
+Username="Loke"
+echo$Username
+#Age="0"
+#Place="Helsingborg"
+
 
