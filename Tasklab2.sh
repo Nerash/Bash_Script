@@ -1,3 +1,4 @@
+#!/bin/bash
 
 #Task 1
 #Username="Johan"
@@ -20,10 +21,21 @@
 #read -p means that you are asking a question and in the end the question is displayed.
 #===============================
 #Task3
-read -p "Name?" Name
-read -p "Age?" Age
-read -p "Place?" Place
-echo "$Name $Age $Place" >> list.txt
+#read -p "Name?" Name
+#read -p "Age?" Age
+#read -p "Place?" Place
+#echo "$Name $Age $Place" >> list.txt
+#exit 0
+
+#===============================
+#Task4
+
+read -p "what is you color??" Color
+if [$Color = "RED" ]  ;then
+	echo $Color
+else
+	echo "It is RED Mother fucker"
+fi
 exit 0
 
 
