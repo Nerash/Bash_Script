@@ -24,18 +24,18 @@
 
 #here shall I create a program that take use of another file/program
 
-read -p " what shall we do ? " Test
-
-if [ ! -e ./cry.sh hej.sh -o ! -w ./cry.sh hej.sh ] ; then
-        echo "file is not found or doesn't exist"
-		eog ./pic
-elif [ "$Test" -eq "wcry" ] ; then 
-	rbash ./cry.sh
-elif [ "$Test" = "check" ] ; then
-    	rbash ./hej.sh
-else
-	exit 0
-fi 
+#read -p " what shall we do ? " Test
+#
+#if [ ! -e ./cry.sh hej.sh -o ! -w ./cry.sh hej.sh ] ; then
+#        echo "file is not found or doesn't exist"
+#		eog ./pic
+#elif [ "$Test" -eq "wcry" ] ; then 
+#	rbash ./cry.sh
+#elif [ "$Test" = "check" ] ; then
+#    	rbash ./hej.sh
+#else
+#	exit 0
+#fi 
 ##the error message didn't work... why well Idon't know.. that is the problem..
 #pushing the script and go from there,
 # check the the sqript above and se that the script should
@@ -45,7 +45,31 @@ fi
 #Task 3
 
 #make a sqript that ask the user for a number between 1-10 and if they type
-#a number not in that range then display WRONG BITCH
+#a number not in that range then display "Error not in this session"
 
+#read -p " Give me a number between 1 and 10 " Numb
+#
+#if [ "$Numb" -le "10" ] ; then
+#	echo "Great!"
+#else 
+#	echo "Error not in this session!"
+#exit 1 
+#fi
 
+#===============================
+#Task 4
+#now you will create a start sqript that start when you type its name.sh
 
+read -p " skriv 1: " kalle
+
+if [ "$kalle" -eq "1" ] ; then 
+	echo " filnamnet är ./hej.sh och är ett sqript till att taila syslogen." 
+else
+	eog pic.jpg 
+exit 1
+fi
+#well there was som small problem that was annying that value of kalle couldn't
+#be the value of one.
+# ex [ "$1" = "1" ] because of that I change it to kalle.
+
+#have fun!
