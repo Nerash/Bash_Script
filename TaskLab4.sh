@@ -24,9 +24,12 @@
 
 Value1="7"  #1 USD = 6,91SEK
 Value2="100" #SEK
-SUM=$((Value2/Value1))
+SUM=$( echo "scale=9; $Value2/$Value1" | bc ) #syntax does work!
 	echo "you get $SUM USD for 100SEK"
-exit 1
+
+exit 0
+
+# scale=3; put out three decimals and then you pipe the ekvation to gnome calc.
 
 #rigth answer is that you are getting 14USD but ((100/6,91)) = 1 doesn't add up!
 # then take the closest "Hole" Number! 
