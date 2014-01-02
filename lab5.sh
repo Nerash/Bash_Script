@@ -36,11 +36,11 @@
 #working just fine.
 
 #===============================
-#Num=0
-#while [ $Num -lt 3 ] ; do
-#	echo "Number: $Num"
-#	Num=$[ Num+1 ]		#Alternetiv ((Num ++))
-#done
+Num=0
+while [ $Num -lt 3 ] ; do
+	echo "Number: $Num"
+	Num=$[ Num+1 ]		#Alternetiv ((Num ++))
+done
 
 #what shall this do? just gibe me alots of number and 
 #I solved the case used wrong value! answer is 0 1 2
@@ -80,10 +80,10 @@
 
 #now over to TaskLab5.sh
 
-if [ ! -e ./TaskLab5.sh -o ! -w ./Tasklab5.sh ] ; then
-	echo "Go and get it because it is not found!"
-else
-  rbash taskLab5.sh
-
-fi
-exit 0 
+#if [ ! -e ./TaskLab5.sh -o ! -w ./Tasklab5.sh ] ; then
+#	echo "Go and get it because it is not found!"
+#else
+# # rbash TaskLab5.sh
+#
+#fi
+#exit 0 
