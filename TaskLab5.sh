@@ -55,4 +55,24 @@
  #=============================
 #Task 2
 
-here shall we build a script that ....
+#here shall we build a script that .... do what the script does on task 1
+
+#===============================
+#Task 3
+
+
+while read -p " search after while.sh " Fil; do
+ 	
+if  [ " $Fil " = " while.sh " ] ; then
+	[ ! -e ./while.sh -o ! -w ./while.sh ] 
+		echo " there you are! " 
+		break
+
+	else 
+		[ "$Fil" = " while.sh " ]	
+		echo "well we try again."
+
+	fi
+	done
+exit 0
+
