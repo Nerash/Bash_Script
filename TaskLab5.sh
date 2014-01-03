@@ -3,7 +3,6 @@
 
 #===============================
 #Task 1
-
 #
 #read -p "Write a number from 10 to 100: " Tal
 #if [[ $Tal != *[!0-9]* ]]; then #Makes sure there's no string
@@ -61,18 +60,30 @@
 #Task 3
 
 
-while read -p " search after while.sh " Fil; do
- 	
-if  [ " $Fil " = " while.sh " ] ; then
-	[ ! -e ./while.sh -o ! -w ./while.sh ] 
-		echo " there you are! " 
-		break
+#while read -p " search after while.sh " Fil; do	
+#if  [ " $Fil " = " while.sh " ] ; then
+#	[ ! -e ./while.sh -o ! -w ./while.sh ] 
+#		echo " there you are! " 
+#		break
+#	else 
+#		[ "$Fil" = " while.sh " ]	
+#		echo "well we try again."
+#	fi
+#	done
+#exit 0
 
-	else 
-		[ "$Fil" = " while.sh " ]	
-		echo "well we try again."
+#well this work just fine! but I need to do this a few more times to
+##understand it and make it work after my will!
 
-	fi
-	done
-exit 0
+#===============================
 
+#Task 4
+
+read -p "What are you?: " Tek
+read -p "who are you?: " Rel
+read -p "what is your name?: " Bal
+echo "$Tek $Rel $Bal" >> list.txt
+
+
+
+#here I'm lost hmm need to think...
