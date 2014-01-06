@@ -79,11 +79,54 @@
 
 #Task 4
 
-read -p "What are you?: " Tek
-read -p "who are you?: " Rel
-read -p "what is your name?: " Bal
-echo "$Tek $Rel $Bal" >> list.txt
+#read -p " type a number between 0 and 60 " Num #erll this didn't work..
+#while read lines tryout.txt ; do 
+#	Num=$(( $Num+$lines ))
+
+#WORK!============================WORK!
+
+#while read line; do
+#    ((Num[${#line}]++)) # ($#)=Total number of positional parameters.
+#done < tryout.txt	 #((Num[${#line}]++)) multiple comand with value Num 
+			 # See arrys!
+
+	##This is the rigth start syntax... that I have had problem!!
+	## with but I do not understand why... need help!!
+	## well... 
+
+#if [ $Num -ge 30 -a $Num -le 48 ]; then 
+#	echo " G "
+#elif [ $Num -ge 48 -a $Num -le 60 ]; then
+#	echo " VG "
+#elif [ $Num -ge 0 -a $Num -le 29 ]; then
+#	echo " IG "
+#elif [ $Num -gt 60 ]; then 
+#	echo " comon that is not even in the rigth range! "
+#fi
+#exit 0
+#WORK!=============================WORK!
 
 
+## well lets try an example...
 
-#here I'm lost hmm need to think...
+#while read line; do
+#    ((histogram[${#line}]++))
+#done < tryout.txt
+#echo "Length Occurrence"
+#for length in "${!histogram[@]}"; do
+#    printf "%-6s %s\n" "${length}" "${histogram[$length]}"
+#done
+
+##this work and my script above doesen't... why??
+
+#===============================
+#Task 5
+## here will create a backup script.
+#exemple..
+# OF=myhome_directory_$(date +%Y%m%d).tar.gz
+# tar -czf $OF /home/linuxconfig 
+
+TaLk="$USER"$(date +%Y%m%d).tar.gz 
+tar -czf $TaLk tryout.txt #here you defined what you want to archive... write down the path!
+
+
